@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Click n' Feast" content='Food, Deliveries, Asian, Indian, Starters, Mains, Dessert'>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Click n' Feast |  About Us</title>
+  </head>
+  <body>
+      
+    <!-- Navigation Bar -->
+  <div class="container" id="navbar-container">
+    <header class="d-flex flex-wrap justify-content-center py-2 mb-1 border-bottom">
+      <a href="/" class="d-flex align-items-center  mb-md-0 me-md-auto text-dark text-decoration-none offset-" id="navbar-brand">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4" id="navbar-brand"><b>Click n' Feast</b></span>
+      </a>
+
+      <ul class="nav nav-pills offset-2">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="Offers.html" class="nav-link">Offers</a></li>
+        <li class="nav-item"><a href="AboutUs.html" class="nav-link active" id="btnalter" aria-current="page">About Us</a></li>
+        <li class="nav-item"><button onclick="document.getElementById('loginModal').style.display='block'"class="nav-link" id="loginBTN">Login / Sign Up</button></li>
+        <li class="nav-item"><a href="checkout.html" class="btn btn-success ml 2">Checkout<span></span></a></li>
+      </ul>
+    </header>
+  </div>
+    
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark" style="background-image: url(images/blogHeader.jpg)">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">We are hiring!</h1>
+      <p class="lead my-3">Join our skilled team and earn a competitive salary with multiple perks.</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Find out more here</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Business</strong>
+          <h3 class="mb-2">Partner with us Today</h3>
+          <div class="mb-2 text-muted">Nov 12</div>
+          <p class="card-text mb-4">Are you a resturant owner looking to increase potential orders? Contact our team to increase your reach to thousands of new users.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img" src="images/thumbnail-blog.jpeg"width="300" height="250">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-danger">Covid-19</strong>
+          <h3 class="mb-2">Working From Home</h3>
+          <div class="mb-2 text-muted">Nov 11</div>
+          <p class="mb-5">Covid-19 has massively changed how we work. Read more to see how we have adapted over the last year.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img class="bd-placeholder-img" src="images/workingfromhomeblog.jpg" width="300" height="250">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container" id="form-aligntext">
+    <div class="row g-5">
+    <div class="col">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Company News
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">MORE COMING SOON</h2>
+        </article>
+      </div>
+    </div>
+    </div>
+    
+    <div id="loginModal" class="modal">
+  <form class="modal-content animate" method="get" id="user-login" name="login">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('loginModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/logo.png" alt="Logo" height="300" width="300">
+    </div>
+    <div class="container">
+        <div class="alert alert-danger d-none" role="alert" id="loginerror">The username or password entered is invalid.</div>
+        <div class="alert alert-success d-none" role ="alert" id="loginsuccess">You have successfully logged in.</div>
+      <label for="username" ><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" value="username"required>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="password" name="password" value="password" required> 
+      <label id="lblRM">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button onclick="checkLogin()" type="button" value="Login" id="btnalter">Login</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</main>
+
+      
+
+<!-- Footer -->
+<footer class="py-4 border-top" id="footer">
+<div class="container" >
+    <div class="row">
+      <div class="col-2">
+        <h5>Navigation</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="Offers.html" class="nav-link p-0 text-muted">Offers</a></li>
+          <li class="nav-item mb-2"><a href="AboutUs.html" class="nav-link p-0 text-muted">About Us</a></li>
+          <li class="nav-item mb-2"><a href="checkout.html" class="nav-link p-0 text-muted">Checkout</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Navigation</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="Offers.html" class="nav-link p-0 text-muted">Offers</a></li>
+          <li class="nav-item mb-2"><a href="AboutUs.html" class="nav-link p-0 text-muted">About Us</a></li>
+          <li class="nav-item mb-2"><a href="checkout.html" class="nav-link p-0 text-muted">Checkout</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="col-4 offset-4">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-3">
+            <label for="newsletter1" class="visually-hidden" >Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button" id="btnalter">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between pt-4 mt-4">
+      <p>&copy; 2021 Click n' Feast Inc. All rights reserved.</p>
+    </div>
+</div>
+</footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="custom-js/login.js"></script>
+  </body>
+</html>
